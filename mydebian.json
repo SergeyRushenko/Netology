@@ -1,0 +1,32 @@
+{
+    "builders": [
+        {
+            "type": "yandex",
+            "token": "ххххх",
+            "folder_id": "b1g6k6drt9kv66hc6b2b",
+            "zone": "ru-central1-a",
+            "image_name": "debian-11-docker",
+            "image_description": "my custom debian with docker",
+            "source_image_family": "debian-11",
+            "subnet_id": "epd7stes795gqvkne168",
+            "use_ipv4_nat": true,
+            "disk_type": "network-hdd",
+            "ssh_username": "debian"
+        }
+    ],
+"provisioners": [
+    {
+        "type": "shell",
+        "inline": [
+            "sudo apt-get update",
+            "sudo apt-get install -y ca-certificates curl gnupg lsb-release",
+            "sudo mkdir -p /etc/apt/keyrings",
+            "curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg",
+            "sudo apt-get update",
+            "sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin",
+            "sudo systemctl enable docker",
+            "sudo systemctl start docker",
+            "sudo usermod -aG docker debian"
+        ]
+    }
+]
