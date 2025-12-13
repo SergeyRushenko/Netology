@@ -31,15 +31,4 @@ https://hub.docker.com/repository/docker/sergey1199/custom-nginx/general
 <img width="1818" height="686" alt="Задача 5(3)" src="https://github.com/user-attachments/assets/34dd1d99-e4b9-40f5-8f12-55a7cff54a8b" />
 <img width="713" height="870" alt="Задача 5 Portainer" src="https://github.com/user-attachments/assets/3a24048f-2357-420e-b8d0-947931d8f6b9" />
 
-
-[compose.yaml](https://github.com/user-attachments/files/24141849/compose.yaml)
-include:
-  - docker-compose.yaml
-
-version: "3"
-services:
-  portainer:
-    network_mode: host
-    image: portainer/portainer-ce:latest
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
+https://github.com/SergeyRushenko/Netology/blob/main/compose.yaml
