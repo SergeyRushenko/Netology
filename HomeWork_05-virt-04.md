@@ -26,3 +26,8 @@ https://github.com/SergeyRushenko/shvirtd-example-python.git
 <img width="1690" height="1027" alt="image" src="https://github.com/user-attachments/assets/2cc8579e-d246-46c9-b806-e4814c2187ba" />
 #
 <img width="1255" height="128" alt="image" src="https://github.com/user-attachments/assets/64468d5d-3f41-405a-9b17-c3040b208865" />
+
+
+# Задача 6.1
+
+<img width="1040" height="179" alt="image" src="https://github.com/user-attachments/assets/0f01c615-6e42-4a82-becc-5f42e5348787" />
